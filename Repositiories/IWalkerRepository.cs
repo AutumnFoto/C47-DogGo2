@@ -2,7 +2,7 @@
 using Microsoft.Data.SqlClient;
 using System.Collections.Generic;
 
-namespace DogGo.Repositories
+namespace DogGo2.Repositories
 {
     public interface IWalkerRepository
     {
