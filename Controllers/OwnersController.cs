@@ -1,47 +1,54 @@
 ﻿using DogGo.Models;
-using DogGo2.Repositories;
+using DogGo2.Repositiories;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DogGo2.Controllers
 {
-    public class WalkersController : Controller
+    public class OwnersController : Controller
     {
-    private readonly IWalkerRepository _walkerRepo;
 
-    // ASP.NET will give us an instance of our Walker Repository. This is called "Dependency Injection"
-    public WalkersController(IWalkerRepository walkerRepository)
-    {
-        _walkerRepo = walkerRepository;
-    }
-        // GET: Walkers/index
-        public ActionResult Index()
+
+        private readonly IOwnerRepository _ownerRepo;
+
+        // ASP.NET will give us an instance of our Owner Repository. This is called "Dependency Injection"
+        public OwnersController(IOwnerRepository ownerRepository)
         {
-            List<Walker> walkers = _walkerRepo.GetAllWalkers();
-
-            return View(walkers);
+            _ownerRepo = ownerRepository;
         }
 
-        // GET: WalkersController/Details/5
+        // GET: OwnersController
+        public ActionResult Index()
+        {
+            List<Owner> owners = _ownerRepo.GetAllOwners();
+
+            return View(owners);
+        }
+
+        // GET: OwnersController/Details/5
         public ActionResult Details(int id)
         {
-            Walker walker = _walkerRepo.GetWalkerById(id);
+            Owner owner = _ownerRepo.GetOwnerById(id);
 
-            if (walker == null)
+            if (owner == null)
             {
                 return NotFound();
             }
 
-            return View(walker);
+            return View(owner);
         }
 
-        /* GET: WalkersController/Create
+        // GET: OwnersController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: WalkersController/Create
+        // POST: OwnersController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -56,13 +63,13 @@ namespace DogGo2.Controllers
             }
         }
 
-        // GET: WalkersController/Edit/5
+        // GET: OwnersController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: WalkersController/Edit/5
+        // POST: OwnersController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -77,13 +84,13 @@ namespace DogGo2.Controllers
             }
         }
 
-        // GET: WalkersController/Delete/5
+        // GET: OwnersController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: WalkersController/Delete/5
+        // POST: OwnersController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
@@ -96,6 +103,6 @@ namespace DogGo2.Controllers
             {
                 return View();
             }
-        }*/
+        }
     }
 }
