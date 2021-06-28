@@ -12,5 +12,10 @@ namespace DogGo2.Repositiories
 
         List<Owner> GetAllOwners();
         Owner GetOwnerById(int id);
+        void AddOwner(Owner owner);
+
+        void UpdateOwner(Owner owner);
+
+        void DeleteOwner(int id);
     }
 }
