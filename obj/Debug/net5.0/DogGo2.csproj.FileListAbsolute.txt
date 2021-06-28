@@ -438,3 +438,12 @@ C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owner
 C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walkers\Create.cshtml.g.cs
 C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walkers\Delete.cshtml.g.cs
 C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walkers\Edit.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Create.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Delete.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Details.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Edit.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Index.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Owners\Login.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walks\Create.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walks\Delete.cshtml.g.cs
+C:\Users\acart\workspace\csharp\DogGo2\DogGo2\obj\Debug\net5.0\Razor\Views\Walks\Index.cshtml.g.cs

@@ -1,4 +1,5 @@
-﻿using DogGo2.Models;
+﻿using DogGo.Models;
+using DogGo2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DogGo2.Controllers
+namespace DogGo.Controllers
 {
     public class HomeController : Controller
     {

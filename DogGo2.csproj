@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Owner\Component.razor" />
-    <Content Remove="Views\Owner\Index1.cshtml" />
+    <Content Remove="Views\Owners\Component.razor" />
+    <Content Remove="Views\Owners\Index1.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

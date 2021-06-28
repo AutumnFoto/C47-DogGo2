@@ -1,0 +1,64 @@
+﻿@model DogGo.Models.ViewModels.WalksDeleteViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Walks to Delete</h1>
+
+<form asp-action="Delete">
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Delete
+                </th>
+
+                <th>
+                    Date
+                </th>
+                <th>
+                    Duration
+                </th>
+                <th>
+                    Walker
+                </th>
+                <th>
+                    Dog
+                </th>
+                <th>
+                    Owner
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Walks)
+            {
+                <tr>
+                    <select asp->
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Duration)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.WalkerId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DogId)
+                        </td>
+                        <td>
+                            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                        </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
